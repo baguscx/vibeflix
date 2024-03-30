@@ -62,7 +62,7 @@ export default function Login() {
                                         Start Watching
                                     </span>
                                 </Button>
-                                <Link href="/prototype/register">
+                                <Link href={route("prototype.register")}>
                                     <Button
                                         type="button"
                                         variant="light-outline"

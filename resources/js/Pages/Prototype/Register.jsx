@@ -71,7 +71,7 @@ export default function Register() {
                                         Sign Up
                                     </span>
                                 </Button>
-                                <Link href="/prototype/login">
+                                <Link href={route("prototype.login")}>
                                     <Button
                                         type="button"
                                         variant="light-outline"
