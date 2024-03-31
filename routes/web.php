@@ -23,6 +23,10 @@ Route::prefix('prototype')->name('prototype.')->group(function () {
     Route::get('/dashboard', function(){
         return Inertia::render('Prototype/Dashboard');
     })->name('dashboard');
+
+    Route::get('/subsciptionPlan', function(){
+        return Inertia::render('Prototype/SubscriptionPlan');
+    })->name('subscriptionPlan');
 });
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
