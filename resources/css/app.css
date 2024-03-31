@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "textinput.css";
 @import "button.css";
+@import "sidebar.css";
 
 .flex::before,
 .flex::after {

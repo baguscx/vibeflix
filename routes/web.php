@@ -15,11 +15,15 @@ Route::prefix('prototype')->name('prototype.')->group(function () {
     Route::get('/login', function(){
         return Inertia::render('Prototype/Login');
     })->name('login');
+
     Route::get('/register', function(){
         return inertia::render('Prototype/Register');
     })->name('register');
-});
 
+    Route::get('/dashboard', function(){
+        return Inertia::render('Prototype/Dashboard');
+    })->name('dashboard');
+});
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
