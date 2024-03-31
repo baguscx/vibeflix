@@ -31,7 +31,7 @@ export default function Dashboard() {
                     {[1, 2, 3, 4].map((i) => (
                         <FeaturedMovie
                             key={i}
-                            slug={"the-batman-in-love"}
+                            slug={`the-batman-in-love-${i}`}
                             name={`The Batman In Love ${i}`}
                             category={"Action, Adventure"}
                             thumbnail={"/images/featured-1.png"}
@@ -50,7 +50,7 @@ export default function Dashboard() {
                     {[1, 2, 3, 4, 5, 6].map((i) => (
                         <MovieCard
                             key={i}
-                            slug={"meong-golden"}
+                            slug={`meong-golden-${i}`}
                             name={`Meong Golden ${i}`}
                             category={"Comedy"}
                             thumbnail={"/images/browse-1.png"}
