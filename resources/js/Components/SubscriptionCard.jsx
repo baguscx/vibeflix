@@ -56,7 +56,9 @@ export default function SubscriptionCard({
                     {/* <!-- Top Content: Name-Price --> */}
                     <div>
                         <div className="text-sm mb-2">{name}</div>
-                        <div className="text-[28px] font-bold">IDR {price}</div>
+                        <div className="text-[28px] font-bold">
+                            IDR {price.toLocaleString()}
+                        </div>
                         <p className="text-[#767676] text-xs font-light">
                             /{durationInMonth} months
                         </p>
