@@ -18,23 +18,13 @@ class SubscriptionPlanTableSeeder extends Seeder
                 "name" => "Basic",
                 "price" => 100000,
                 "active_period_in_months" => 3,
-                "features" => json_encode([
-                    "feature1" => "feature1",
-                    "feature2" => "feature2",
-                    "feature3" => "feature3",
-                ]),
+                "features" => json_encode(["feature1", "feature2", "feature3"]),
             ],
             [
                 "name" => "Premium",
                 "price" => 1000000,
                 "active_period_in_months" => 6,
-                "features" => json_encode([
-                    "feature1" => "feature1",
-                    "feature2" => "feature2",
-                    "feature3" => "feature3",
-                    "feature4" => "feature4",
-                    "feature5" => "feature5",
-                ]),
+                "features" => json_encode(["feature1", "feature2", "feature3", "feature4", "feature5"]),
             ],
         ];
 
