@@ -53,7 +53,7 @@ export default function Dashboard({ auth, featuredMovies, latestMovies }) {
                             slug={latestMovie.slug}
                             name={latestMovie.name}
                             category={latestMovie.category}
-                            thumbnail={latestMovie.thumbnail}
+                            thumbnail={`/storage/${latestMovie.thumbnail}`}
                         />
                     ))}
                 </Flickity>

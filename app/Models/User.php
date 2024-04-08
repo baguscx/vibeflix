@@ -67,4 +67,14 @@ class User extends Authenticatable
     {
         return $this->hasOne(UserSubscription::class)->wherePaymentStatus('paid')->latest();
     }
+
+    // public function hasRole($role)
+    // {
+    //     // Mendapatkan semua peran dari pengguna ini
+    //     $roles = $this->roles()->pluck('name')->toArray();
+
+    //     // Memeriksa apakah peran yang diminta ada di dalam array peran pengguna
+    //     return in_array($role, $roles);
+    // }
+
 }
