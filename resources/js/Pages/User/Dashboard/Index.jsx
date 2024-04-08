@@ -34,7 +34,7 @@ export default function Dashboard({ auth, featuredMovies, latestMovies }) {
                             slug={featuredMovie.slug}
                             name={featuredMovie.name}
                             category={featuredMovie.category}
-                            thumbnail={featuredMovie.thumbnail}
+                            thumbnail={`/storage/${featuredMovie.thumbnail}`}
                             rating={featuredMovie.rating}
                         />
                     ))}

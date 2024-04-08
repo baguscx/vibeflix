@@ -16,7 +16,8 @@ Route::redirect('/', '/login');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.dashboard.')->group(function () {
-    Route::resource('movie', AdminMovieController::class);
+        Route::put('/movie/{movie}/restore', [AdminMovieController::class, 'restore'])->name('movie.restore');
+        Route::resource('movie', AdminMovieController::class);
 });
 Route::middleware(['auth', 'role:user'])->prefix('dashboard')->name('user.dashboard.')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('index');
