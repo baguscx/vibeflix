@@ -38,6 +38,7 @@ export default forwardRef(function TextInput(
             value={value}
             autoComplete={autoComplete}
             ref={input}
+            defaultValue={defaultValue}
             placeholder={placeholder}
         />
     );
