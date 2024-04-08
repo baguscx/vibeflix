@@ -69,7 +69,7 @@ class MovieController extends Controller
      */
     public function update(UpdateRequest $request, Movie $movie)
     {
-        $data = $request->validate();
+        $data = $request->validated();
         if ($request->file('thumbnail')){
             $data['thumbnail'] = Storage::disk('public')->put('movies', $request->file('thumbnail'));
             Storage::disk('public')->delete($movie->thumbnail);

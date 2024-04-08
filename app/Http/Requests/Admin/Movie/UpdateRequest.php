@@ -23,7 +23,7 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'nullable|unique:movies,name'.$this->movie->id,
+            'name' => 'nullable|unique:movies,name,'.$this->movie->id,
             'category' => 'nullable',
             'video_url' => 'nullable|url',
             'thumbnail' => 'nullable|image',
